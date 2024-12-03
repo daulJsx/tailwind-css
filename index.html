@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./src/styles/output.css" rel="stylesheet" />
+    <title>Exploring Tailwind CSS</title>
+  </head>
+  <body class="dark:bg-slate-800 dark:text-white">
+    <h1
+      class="text-4xl font-bold text-center my-3 bg-gradient-to-r from-blue-500 to-teal-400 bg-clip-text text-transparent"
+    >
+      Tailwind Css
+    </h1>
+    <section class="mb-10 space-y-3">
+      <h1 class="text-center text-3xl font-bold py-2">Spacing</h1>
+      <div class="ml-13 bg-slate-300">Margin</div>
+      <div class="p-8 bg-slate-300">Padding</div>
+    </section>
+
+    <section class="mb-10 space-y-3">
+      <h1 class="text-center text-3xl font-bold py-2">Sizing</h1>
+
+      <div class="bg-slate-300 w-32 h-32">Box 1</div>
+      <div class="bg-slate-300 max-w-xs min-h-screen">Box 2</div>
+    </section>
+
+    <section class="min-h-screen mx-auto max-w-sm">
+      <header class="mb-10">
+        <h1 class="font-bold text-xl">
+          This section are contain Typography in Tailwind CSS
+        </h1>
+        <h2 class="text-xs text-gray-500">By Daffa Ulhaq, 2 Dec 2024</h2>
+      </header>
+
+      <main class="space-y-3">
+        <p class="text-justify">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam dicta
+          modi voluptatum sunt aut sit dolore, animi, eligendi consequuntur
+          rerum ipsum molestiae provident veniam. Explicabo veritatis doloribus
+          beatae eveniet odit!
+        </p>
+        <p class="text-justify">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis
+          enim modi fugit eveniet aspernatur provident quas explicabo temporibus
+          dolorum placeat.
+        </p>
+        <blockquote class="text-justify italic font-thin text-xl">
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis,
+          recusandae."
+        </blockquote>
+      </main>
+    </section>
+
+    <section
+      class="min-h-screen bg-gradient-to-r from-slate-500 to-stone-500 py-3"
+    >
+      <h1 class="text-2xl font-bold text-center my-3 mb-10">Backgrounds</h1>
+      <div
+        class="mx-auto max-w-xl h-96 bg-slate-300 rounded-lg overflow-y-scroll bg-fixed"
+        style="
+          background-image: url('https://images.unsplash.com/photo-1732786923075-d5880b9dde86?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxNXx8fGVufDB8fHx8fA%3D%3D');
+        "
+      >
+        <p class="p-5 text-2xl">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum placeat
+          quae, atque quo eveniet quia eaque? Culpa quos tenetur nostrum velit,
+          et, vel provident sit quod dolores vero adipisci optio laudantium!
+          Doloribus, molestiae sint. Exercitationem perferendis dolores optio
+          eaque saepe, modi maiores voluptatem corporis! Cum adipisci veniam
+          magni inventore illum amet porro, explicabo laboriosam possimus
+          voluptates repellendus quisquam earum, consequuntur id quod nulla.
+          Perspiciatis reprehenderit aspernatur dolore obcaecati esse modi
+          itaque, facere assumenda unde doloremque vero quia dolores quam
+          provident odio quasi suscipit, maiores, placeat fugit voluptatum
+          necessitatibus reiciendis quibusdam distinctio quisquam! Rerum quis
+          ea, reiciendis, fugit quo velit asperiores similique magnam harum quos
+          voluptatum! Sapiente tempore alias eaque saepe dolorum odit provident
+          vitae quae, magni atque, maiores aliquid minima blanditiis. Quibusdam
+          tempora libero voluptatum totam neque repellendus nostrum similique,
+          accusantium necessitatibus aliquam ad expedita exercitationem.
+          Similique sapiente minus expedita, molestias voluptatibus numquam quis
+          soluta eligendi doloremque blanditiis accusantium quasi. Molestiae
+          provident sunt sit fugit ab. Quas vel aperiam similique. Molestiae
+          unde nihil, perferendis mollitia fuga praesentium laudantium deserunt
+          suscipit. Nostrum velit laborum esse dolores cupiditate reiciendis
+          dolorum eos dignissimos, soluta possimus voluptate nobis at magni
+          architecto fuga quae? Dolorem non quos expedita, vero eos deleniti
+          illo id qui nihil?
+        </p>
+      </div>
+    </section>
+
+    <h1 class="text-2xl font-bold text-center my-3 mb-5">
+      Borders, Effects and Filters
+    </h1>
+    <div
+      class="max-w-sm mx-auto h-96 bg-slate-300 bg-contain bg-no-repeat bg-center rounded border-8 bg-blend-multiply shadow-lg overflow-hidden flex"
+      style="
+        background-image: url('https://images.unsplash.com/photo-1719937206109-7f4e933230c8?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwzMXx8fGVufDB8fHx8fA%3D%3D');
+      "
+    >
+      <div
+        class="w-[200px] h-[200px] bg-white/30 m-auto rounded backdrop-blur-md"
+      ></div>
+    </div>
+
+    <div class="flex justify-center my-10">
+      <span class="text-sm mr-2 text-slate-500">Light</span>
+      <input type="checkbox" id="toggle" class="hidden" />
+      <label for="toggle">
+        <div
+          class="flex items-center p-1 w-9 h-4 bg-slate-500 rounded-full cursor-pointer"
+        >
+          <div class="toggle-circle w-4 h-4 bg-white rounded-full"></div>
+        </div>
+      </label>
+      <span class="text-sm ml-2 text-slate-500">Dark</span>
+    </div>
+
+    <button
+      class="bg-sky-500 hover:bg-sky-600 active:bg-sky-700 focus:ring focus:bg-sky-300 px-5 py-2 my-10 rounded-full text-white font-semibold block mx-auto shadow-xl dark:bg-slate-300 dark:text-slate-800 dark:hover:bg-slate-400"
+    >
+      Save changes
+    </button>
+
+    <div
+      class="rounded-xl shadow-xl p-5 my-10 mx-auto max-w-sm border border-slate-200 hover:bg-sky-600 group dark:border-none dark:bg-slate-900"
+    >
+      <h5
+        class="font-bold text-slate-700 text-lg mb-3 group-hover:text-white dark:text-white"
+      >
+        My Card
+      </h5>
+      <p
+        class="dark:text-white font-serif text-slate-600 text-justify group-hover:text-white selection:bg-sky-400 selection:text-slate-200 first-letter:text-7xl first-letter:float-left first-letter:mr-3 first-line:uppercase first-line:tracking-wide"
+      >
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
+        doloribus deserunt hic earum harum ratione, asperiores rem quia eveniet
+        obcaecati, nesciunt voluptates, placeat beatae esse velit est officiis
+        consequuntur debitis.
+      </p>
+    </div>
+
+    <div
+      class="dark:bg-slate-900 dark:border-none rounded-xl shadow-xl p-5 my-10 mx-auto max-w-sm border border-slate-200 group"
+    >
+      <form action="">
+        <label for="email">
+          <span
+            class="font-semibold mb-3 text-slate-700 after:content-['*'] after:text-pink-500 after:ml-0.5 dark:text-white"
+            >Email</span
+          >
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="example@gmail.com"
+            class="px-3 py-2 border rounded w-full block text-sm placeholder:text-slate-400 focus:outline-none focus:ring focus:ring-sky-500 focus:border-sky-500 invalid:text-red-700 invalid:focus:ring-red-700 invalid:focus:border-red-700 peer"
+          />
+          <p class="text-sm text-red-500 m-px invisible peer-invalid:visible">
+            Invalid Email
+          </p>
+        </label>
+      </form>
+    </div>
+
+    <h1 class="text-2xl font-bold text-center my-3 mb-10">
+      Transition, Animation and Transform
+    </h1>
+
+    <div class="w-40 h-40 bg-teal-500 mx-auto rounded-xl shadow-xl group">
+      <div
+        class="w-full h-full bg-sky-500 mx-auto rounded-xl shadow-xl group-hover:rotate-45 origin-top-right transition delay-1000 ease-out"
+      ></div>
+    </div>
+
+    <div
+      class="w-40 h-40 bg-teal-400 mx-auto rounded-xl shadow-xl mt-24 animate-spin-slowed"
+    ></div>
+
+    <section class="min-h-screen my-10">
+      <h1 class="text-2xl font-bold text-center my-3 mb-10">Layouting</h1>
+
+      <div class="container mx-auto shadow-md rounded-md p-5 relative border">
+        <a
+          href="#"
+          class="w-10 h-10 bg-sky-200 rounded-full flex fixed bottom-5 right-5 cursor-pointer"
+        >
+          <span class="m-auto text-blue-500 font-bold text-2xl">↑</span>
+        </a>
+        <img
+          src="https://images.unsplash.com/photo-1719937206109-7f4e933230c8?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwzMXx8fGVufDB8fHx8fA%3D%3D"
+          alt="camera"
+          width="150"
+          class="float-left rounded-xl mr-3"
+        />
+
+        <p class="text-justify">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
+          perspiciatis quo explicabo quia tempora quis ipsam at facere minus
+          mollitia. Non optio officiis illum, fugit accusamus ab. Voluptate
+          veniam ipsa nobis nam temporibus reiciendis odio impedit minus a
+          exercitationem! Molestias aliquam quibusdam accusantium repellendus
+          laudantium fuga reprehenderit, optio ea eaque?
+        </p>
+      </div>
+
+      <div
+        class="container mx-auto shadow-md rounded-md mt-20 p-10 border columns-3 space-y-3"
+      >
+        <img
+          src="https://plus.unsplash.com/premium_photo-1732736768058-42f76dc6e6e3?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw1fHx8ZW58MHx8fHx8"
+          alt="panorama"
+        />
+        <img
+          src="https://plus.unsplash.com/premium_photo-1732736768058-42f76dc6e6e3?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw1fHx8ZW58MHx8fHx8"
+          alt="panorama"
+        />
+        <img
+          src="https://plus.unsplash.com/premium_photo-1732736768058-42f76dc6e6e3?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw1fHx8ZW58MHx8fHx8"
+          alt="panorama"
+        />
+        <img
+          src="https://plus.unsplash.com/premium_photo-1732736768058-42f76dc6e6e3?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw1fHx8ZW58MHx8fHx8"
+          alt="panorama"
+        />
+        <img
+          src="https://plus.unsplash.com/premium_photo-1732736768058-42f76dc6e6e3?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw1fHx8ZW58MHx8fHx8"
+          alt="panorama"
+        />
+        <img
+          src="https://plus.unsplash.com/premium_photo-1732736768058-42f76dc6e6e3?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw1fHx8ZW58MHx8fHx8"
+          alt="panorama"
+        />
+      </div>
+
+      <div
+        class="container mt-20 px-6 max-w-md mx-auto md:max-w-3xl lg:flex lg:max-w-full lg:px-0"
+      >
+        <div class="lg:p-12 lg:flex-1">
+          <h3
+            class="uppercase text-2xl font-bold text-slate-800 sm:text-5xl md:text-6xl"
+          >
+            d<span class="text-sky-500">app</span> skibidi
+          </h3>
+          <img
+            src="https://images.unsplash.com/photo-1720048171731-15b3d9d5473f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwyMXx8fGVufDB8fHx8fA%3D%3D"
+            alt="Learn"
+            class="mt-4 rounded-xl shadow-xl sm:mt-6 sm:h-64 sm:w-full sm:object-cover sm:object-top lg:hidden"
+          />
+          <h4
+            class="mt-6 text-2xl font-bold text-slate-800 sm:mt-8 sm:text-4xl"
+          >
+            Responsive Design
+          </h4>
+          <p class="mt-2 text-slate-600 text-justify sm:mt-4 sm:text-xl">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias,
+            molestiae nihil, aut dignissimos sint dicta porro minus
+            exercitationem asperiores esse eveniet magnam corrupti illo corporis
+            praesentium aspernatur impedit quis excepturi!
+          </p>
+          <div class="mt-4 sm:mt-6">
+            <a
+              class="inline-block px-5 py-3 bg-sky-600 text-white rounded-lg shadow-lg font-semibold"
+              href="#"
+              >Get in Touch</a
+            >
+          </div>
+        </div>
+
+        <div class="hidden lg:flex lg:w-1/2">
+          <img
+            src="https://images.unsplash.com/photo-1720048171731-15b3d9d5473f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwyMXx8fGVufDB8fHx8fA%3D%3D"
+            alt="Learn"
+            class="object-cover object-right rounded-l-3xl"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="text-3xl font-bold text-center my-3 mb-10 text-slate-700">
+        Flex Layouting
+      </h2>
+
+      <div
+        class="container mx-auto px-6 sm:flex sm:flex-wrap sm:gap-6 sm:justify-evenly"
+      >
+        <div
+          class="rounded shadow-lg overflow-hidden mb-10 sm:mb-0 sm:w-64 md:w-80 lg:w-72"
+        >
+          <img
+            src="https://images.unsplash.com/photo-1720048169707-a32d6dfca0b3?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwzMXx8fGVufDB8fHx8fA%3D%3D"
+            alt="Device"
+            class="w-full rounded-t-md"
+          />
+          <div class="px-6 py-4">
+            <h3 class="font-bold text-xl mb-2 text-slate-700">Image Title</h3>
+            <p class="text-sm text-slate-600">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde,
+              ipsum.
+            </p>
+          </div>
+        </div>
+        <div
+          class="rounded shadow-lg overflow-hidden mb-10 sm:mb-0 sm:w-64 md:w-80 lg:w-72"
+        >
+          <img
+            src="https://images.unsplash.com/photo-1720048169707-a32d6dfca0b3?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwzMXx8fGVufDB8fHx8fA%3D%3D"
+            alt="Device"
+            class="w-full rounded-t-md"
+          />
+          <div class="px-6 py-4">
+            <h3 class="font-bold text-xl mb-2 text-slate-700">Image Title</h3>
+            <p class="text-sm text-slate-600">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde,
+              ipsum.
+            </p>
+          </div>
+        </div>
+        <div
+          class="rounded shadow-lg overflow-hidden mb-10 sm:mb-0 sm:w-64 md:w-80 lg:w-72"
+        >
+          <img
+            src="https://images.unsplash.com/photo-1720048169707-a32d6dfca0b3?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwzMXx8fGVufDB8fHx8fA%3D%3D"
+            alt="Device"
+            class="w-full rounded-t-md"
+          />
+          <div class="px-6 py-4">
+            <h3 class="font-bold text-xl mb-2 text-slate-700">Image Title</h3>
+            <p class="text-sm text-slate-600">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde,
+              ipsum.
+            </p>
+          </div>
+        </div>
+        <div
+          class="rounded shadow-lg overflow-hidden mb-10 sm:mb-0 sm:w-64 md:w-80 lg:w-72"
+        >
+          <img
+            src="https://images.unsplash.com/photo-1720048169707-a32d6dfca0b3?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwzMXx8fGVufDB8fHx8fA%3D%3D"
+            alt="Device"
+            class="w-full rounded-t-md"
+          />
+          <div class="px-6 py-4">
+            <h3 class="font-bold text-xl mb-2 text-slate-700">Image Title</h3>
+            <p class="text-sm text-slate-600">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde,
+              ipsum.
+            </p>
+          </div>
+        </div>
+        <div
+          class="rounded shadow-lg overflow-hidden mb-10 sm:mb-0 sm:w-64 md:w-80 lg:w-72"
+        >
+          <img
+            src="https://images.unsplash.com/photo-1720048169707-a32d6dfca0b3?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwzMXx8fGVufDB8fHx8fA%3D%3D"
+            alt="Device"
+            class="w-full rounded-t-md"
+          />
+          <div class="px-6 py-4">
+            <h3 class="font-bold text-xl mb-2 text-slate-700">Image Title</h3>
+            <p class="text-sm text-slate-600">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde,
+              ipsum.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="mt-10 p-2 grid grid-cols-2 gap-2 md:grid-cols-4 md:p-4">
+      <h2
+        class="text-3xl font-bold text-slate-700 md:col-start-4 md:row-start-2 md:flex"
+      >
+        <span class="self-center">Grid Layouting</span>
+      </h2>
+
+      <div
+        class="text-lg font-semibold text-slate-600 md:col-start-2 md:row-start-2 md:flex"
+      >
+        <span class="self-end">@dauldev</span>
+      </div>
+
+      <div
+        class="bg-blue-500 aspect-[4/3] rounded-lg md:aspect-[3/4] xl:aspect-[4/3] overflow-hidden group relative hover:scale-95 transition-all duration-1000"
+      >
+        <div
+          class="w-full h-full bg-[url('https://images.unsplash.com/photo-1733035997778-65e038269fb8?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwzNXx8fGVufDB8fHx8fA%3D%3D')] bg-cover bg-center absolute group-hover:scale-125 transition-all duration-1000"
+        ></div>
+      </div>
+      <div
+        class="bg-blue-500 aspect-[4/3] rounded-lg md:aspect-[3/4] xl:aspect-[4/3] overflow-hidden md:col-start-3 group relative hover:scale-95 transition-all duration-1000"
+      >
+        <div
+          class="w-full h-full bg-[url('https://images.unsplash.com/photo-1732919258508-3fd53a8007b6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwzOHx8fGVufDB8fHx8fA%3D%3D')] bg-cover bg-center absolute group-hover:scale-125 transition-all duration-1000"
+        ></div>
+      </div>
+      <div
+        class="bg-blue-500 aspect-[4/3] rounded-lg md:aspect-[3/4] xl:aspect-[4/3] overflow-hidden group relative hover:scale-95 transition-all duration-1000"
+      >
+        <div
+          class="w-full h-full bg-[url('https://images.unsplash.com/photo-1733036016861-0541eb76dac5?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwzOXx8fGVufDB8fHx8fA%3D%3D')] bg-cover bg-center absolute group-hover:scale-125 transition-all duration-1000"
+        ></div>
+      </div>
+      <div
+        class="bg-blue-500 aspect-[4/3] rounded-lg md:aspect-[3/4] xl:aspect-[4/3] overflow-hidden group relative hover:scale-95 transition-all duration-1000"
+      >
+        <div
+          class="w-full h-full bg-[url('https://images.unsplash.com/photo-1733028724656-b456573528ee?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw0M3x8fGVufDB8fHx8fA%3D%3D')] bg-cover bg-center absolute group-hover:scale-125 transition-all duration-1000"
+        ></div>
+      </div>
+      <div
+        class="bg-blue-500 aspect-[4/3] rounded-lg md:aspect-[3/4] xl:aspect-[4/3] overflow-hidden group relative hover:scale-95 transition-all duration-1000"
+      >
+        <div
+          class="w-full h-full bg-[url('https://images.unsplash.com/photo-1719937050601-969f4f25d060?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw0MXx8fGVufDB8fHx8fA%3D%3D')] bg-cover bg-center absolute group-hover:scale-125 transition-all duration-1000"
+        ></div>
+      </div>
+      <div
+        class="bg-blue-500 aspect-[4/3] rounded-lg md:aspect-[3/4] xl:aspect-[4/3] overflow-hidden group relative hover:scale-95 transition-all duration-1000 md:col-start-2"
+      >
+        <div
+          class="w-full h-full bg-[url('https://images.unsplash.com/photo-1732980763819-241e8e5c2917?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw0NXx8fGVufDB8fHx8fA%3D%3D')] bg-cover bg-center absolute group-hover:scale-125 transition-all duration-1000"
+        ></div>
+      </div>
+      <div
+        class="bg-blue-500 aspect-[4/3] rounded-lg md:aspect-[3/4] xl:aspect-[4/3] overflow-hidden group relative hover:scale-95 transition-all duration-1000 md:col-start-4"
+      >
+        <div
+          class="w-full h-full bg-[url('https://images.unsplash.com/photo-1732888169391-9001089d6342?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw0OXx8fGVufDB8fHx8fA%3D%3D')] bg-cover bg-center absolute group-hover:scale-125 transition-all duration-1000"
+        ></div>
+      </div>
+      <div
+        class="bg-blue-500 aspect-[4/3] rounded-lg md:aspect-[3/4] xl:aspect-[4/3] overflow-hidden group relative hover:scale-95 transition-all duration-1000"
+      >
+        <div
+          class="w-full h-full bg-[url('https://images.unsplash.com/photo-1712817616366-00edffdb0e9d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw1NHx8fGVufDB8fHx8fA%3D%3D')] bg-cover bg-center absolute group-hover:scale-125 transition-all duration-1000"
+        ></div>
+      </div>
+
+      <div
+        class="bg-blue-500 aspect-[4/3] rounded-lg md:aspect-[3/4] xl:aspect-[4/3] overflow-hidden group relative hover:scale-95 transition-all duration-1000 md:col-start-3"
+      >
+        <div
+          class="w-full h-full bg-[url('https://images.unsplash.com/photo-1732980512649-fee10a5c556c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwzMnx8fGVufDB8fHx8fA%3D%3D')] bg-cover bg-center absolute group-hover:scale-125 transition-all duration-1000"
+        ></div>
+      </div>
+      <div
+        class="bg-blue-500 aspect-[4/3] rounded-lg md:aspect-[3/4] xl:aspect-[4/3] overflow-hidden group relative hover:scale-95 transition-all duration-1000 md:col-start-3"
+      >
+        <div
+          class="w-full h-full bg-[url('https://images.unsplash.com/photo-1732468085904-03c57452bc76?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxMnx8fGVufDB8fHx8fA%3D%3D')] bg-cover bg-center absolute group-hover:scale-125 transition-all duration-1000"
+        ></div>
+      </div>
+    </section>
+
+    <div class="mb-96"></div>
+
+    <script>
+      const checkBox = document.querySelector("#toggle");
+
+      const html = document.querySelector("html");
+
+      checkBox.addEventListener("click", () => {
+        checkBox.checked
+          ? html.classList.add("dark")
+          : html.classList.remove("dark");
+      });
+    </script>
+  </body>
+</html>
